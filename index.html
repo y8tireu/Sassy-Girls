@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sassy Girls</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sassy Girls</h1>
+    <div class="grid" id="grid">
+      <!-- Boxes will be added here by JavaScript -->
+    </div>
+  </div>
+
+  <script>
+    // Array of names
+    const names = ["Anagha", "Heera", "Shruitika", "Riya", "Parker", "Lilly", "Amiya", "Diya", "Rosci", "Nyla"];
+
+    // Select the grid container
+    const gridContainer = document.getElementById("grid");
+
+    // Create a card for each name and add it to the grid
+    names.forEach(name => {
+      const card = document.createElement("div");
+      card.classList.add("card");
+      card.innerHTML = `<h2>${name}</h2>`;
+      gridContainer.appendChild(card);
+    });
+  </script>
+</body>
+</html>
+

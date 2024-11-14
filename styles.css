@@ -1,0 +1,67 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ff69b4; /* Sassy pink color for "Sassy Girls" title */
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    height: calc(100vh - 100px); /* Adjust for title space */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #ff69b4; /* Sassy pink on hover */
+    color: white;
+    box-shadow: 0px 12px 20px rgba(255, 105, 180, 0.5);
+}
+
+.card h2 {
+    font-size: 1.5em;
+}
+
